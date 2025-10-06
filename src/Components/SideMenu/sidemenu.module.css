@@ -1,0 +1,62 @@
+.mainDiv{
+  overflow: hidden;
+}
+.link{
+  position: relative;
+  padding: 0 4px;
+}
+
+.link::after{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 100%;
+  border-radius: 10rem;
+  bottom: 0;
+  left: -120%;
+  background: white;
+  transition: 1s;
+  margin-top: 10px;
+}
+.link::before{
+  position: absolute;
+  content: '';
+  height: 4px;
+  width: 100%;
+  border-radius: 10rem;
+  top: 0;
+  right: -120%;
+  background: white;
+  transition: 1s;
+}
+.link:hover::after{
+  left: 100%;
+}
+.link:hover::before{
+  right: 100%;
+}
+
+.empty1{
+  position: absolute;
+  background: #fff;
+  height: 100%;
+  width: 4px;
+  top: -120%;
+  left: 0;
+  transition: 1s .3s;
+}
+.empty2{
+  position: absolute;
+  background: #fff;
+  height: 100%;
+  width: 4px;
+  bottom: -120%;
+  right: 0;
+  transition: 1s .3s;
+}
+.link:hover .empty1{
+  top: 120%;
+}
+.link:hover .empty2{
+  bottom: 120%;
+}

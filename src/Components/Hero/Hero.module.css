@@ -1,0 +1,53 @@
+.text {
+    font-weight: 100;
+}
+.text span{
+    position: absolute;
+    transform-origin: 0 96px;
+    left: 50%;
+    top: -0;
+}
+.circle {
+    animation: rotateText 8s linear infinite alternate  ;
+}
+
+@keyframes rotateText {
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+    
+}
+.develop{
+    position: relative;
+}
+.develop::after{
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    background: #fff;
+    border-radius: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-55%, -35%);
+}
+@media screen and (max-width:1200px){
+    .develop::after{
+        height: 15px;
+        width: 15px;
+    }
+}
+@media screen and (max-width:800px){
+    .develop::after{
+        height: 10px;
+        width: 10px;
+    }
+}
+@media screen and (max-width:400px){
+    .develop::after{
+        display: none;
+    }
+}

@@ -1,0 +1,86 @@
+.button{
+    position: relative;
+    overflow: hidden;
+}
+.button::after{
+    content: attr(data-content);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: -100%;
+    left: 0;
+    background: #fff;
+    border-radius: 999px;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-weight: bold;
+}
+.button::before{
+    content: attr(data-content);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: -100%;
+    border-radius: 999px;
+    left: 0;
+    transition: .4s .2s;
+    background: #131212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.button:hover::after{
+    bottom: 0;
+}
+.button:hover::before{
+    bottom: 0;  
+}
+
+.toGithub{
+    position: relative;
+    display: flex;
+    align-items: center; 
+    gap: 2px;
+    cursor: pointer;
+    font-size: 1.8vw;
+}
+.toGithub span{
+    transform: rotate(-45deg);
+    transition: .4s;
+}
+.toGithub:hover span{
+    transform: rotate(45deg);
+}
+.toGithub::after {
+    content: '';
+    position: absolute;
+    background: white;
+    height: 2px;
+    width: 100%;
+    bottom: 0px;
+    left: 0;
+    transition: .4s;
+}
+.toGithub::before {
+    content: '';
+    position: absolute;
+    background: white;
+    height: 2px;
+    width: 0;
+    bottom: 0px;
+    right: 0%;
+    transition: .4s .4s;
+}
+.toGithub:hover::after{
+    width: 0;
+}
+.toGithub:hover::before{
+    width: 100%;
+}

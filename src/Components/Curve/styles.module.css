@@ -1,0 +1,20 @@
+.svgCurve{
+    position:absolute;
+    z-index: 10;
+    top: 0;
+    right: -100px;
+    width: 100px;
+    height: 100vh;
+    fill:#131212;
+    stroke: none
+}
+.svgCurvetwo{
+    position:absolute;
+    z-index: 10;
+    top: 0;
+    left: -100px;
+    width: 100px;
+    height: 100vh;
+    fill:#131212;
+    stroke: none
+}

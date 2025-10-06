@@ -1,0 +1,71 @@
+.descriptionone {
+    position: relative;
+    text-align: justify;
+    mix-blend-mode: difference;
+}
+.descriptiontwo {
+    position: relative;
+    text-align: justify;
+    align-self: flex-end;
+    mix-blend-mode: difference;
+}
+.descriptionone::after {
+    content: '';
+    position: absolute;
+    background: white;
+    height: 2px;
+    width: 100%;
+    top: -10px;
+    left: 0;
+}
+.descriptiontwo::after {
+    content: '';
+    position: absolute;
+    background: white;
+    height: 2px;
+    width: 100%;
+    top: -10px;
+    left: 0;
+}
+
+.downloadCv{
+    position: relative;
+    display: flex;
+    align-items: center; 
+    gap: 1rem;
+    cursor: pointer;
+}
+.downloadCv span{
+    transform: rotate(-45deg);
+    transition: .4s;
+}
+.downloadCv:hover span{
+    transform: rotate(45deg);
+}
+.downloadCv::after {
+    content: '';
+    position: absolute;
+    background: white;
+    height: 2px;
+    width: 48%;
+    bottom: -5px;
+    left: 0;
+    transition: .4s;
+}
+.downloadCv::before {
+    content: '';
+    position: absolute;
+    background: white;
+    height: 2px;
+    width: 0;
+    bottom: -5px;
+    right: 50%;
+    transition: .4s .4s;
+}
+.downloadCv:hover::after{
+    width: 0;
+}
+.downloadCv:hover::before{
+    width: 50%;
+    /* transition: .4s 0s; */
+}

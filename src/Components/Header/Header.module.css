@@ -1,0 +1,18 @@
+.headerLogo{
+    position: relative;
+  }
+.headerLogo::after{
+    content: '';
+    background: #fff;
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    top: 50%;
+    left: -10px;
+    z-index: 1;
+    border-radius: 100%;
+    transition: .4s;
+}
+.headerLogo:hover::after{
+    left: 110%;
+}
