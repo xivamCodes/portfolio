@@ -10,7 +10,7 @@ export default function Description() {
         <Reveal>
           I&lsquo;M FREELANCE DEVELOPER AND STUDENT BASED IN 
           RAJASTHAN, INDIA. PRESENTLY STUDYING AT <a href="https://www.chitkara.edu.in/" target="_blank" className="text-blue-100 hover:text-blue-400">CHITKARA UNI.</a>
-          <a href="/doc/Shivam _bishnoi_cv.pdf" download className={`${styles.downloadCv} sm:text-[1.8vw] text-[3vw] mt-6`}>
+          <a href="/shivam.pdf" download className={`${styles.downloadCv} sm:text-[1.8vw] text-[3vw] mt-6`}>
             DOWNLOAD CV{" "}
             <span>
               <FaArrowDownLong />
