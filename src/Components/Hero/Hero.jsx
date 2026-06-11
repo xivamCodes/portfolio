@@ -110,7 +110,7 @@ const Hero = () => {
             >
               <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-300">
-                  Hi, I'm Shivam
+                  {"Hi, I'm Shivam"}
                 </span>
               </h1>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-gray-200 mb-6">
