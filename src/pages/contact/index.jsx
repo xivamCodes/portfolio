@@ -47,7 +47,7 @@ const LinkDiv = ({ data, color }) => {
   );
 };
 const linkArray = [
-  { title: "Contact", logo: IoCall, link: "+91 YOUR_PHONE_NUMBER", color: 'default' },
+  { title: "Contact", logo: IoCall, link: "+91 8920933601", color: 'default' },
   { title: "Email", logo: MdEmail, link: "jhashivam1383@gmail.com", color: 'bg-red-400 rounded-full text-white p-2' },
   {
     title: "LinkedIn",
