@@ -58,7 +58,7 @@ const linkArray = [
   {
     title: "Instagram",
     logo: LuInstagram,
-    link: "https://www.instagram.com/xivamjha/",
+    link: "https://www.instagram.com/onlyfrienz22/",
     color: 'text-orange-500'
   },
   {
